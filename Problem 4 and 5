@@ -1,0 +1,10 @@
+4： When I encounter (, [, or {, I push it onto the stack. 
+When I encounter a closing bracket, I check whether the top of the stack contains the matching opening bracket. 
+If it does not match, or the stack is empty, the parentheses are invalid. 
+At the end, the parentheses are valid only if the stack is empty.
+
+5：First, I pop all elements from the original stack into the queue. 
+I then move them back to the original stack, which reverses their order. 
+I repeat the process by moving them into the queue again. 
+Finally, I dequeue each value and push it onto both the original stack and the new stack. 
+This restores the original stack while creating a copy with the same element order.
